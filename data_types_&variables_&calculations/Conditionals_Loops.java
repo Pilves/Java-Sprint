@@ -1,4 +1,18 @@
-public class condnloops {
+public class Conditionals_Loops {
+    public static void main(String[] args){
+        System.out.println(IsNegative(6)); // false
+        System.out.println(IntVsFloat(5,8.8f)); // Float
+        System.out.println(Season("feb")); // winter
+        System.out.println(Accumulate(4)); // 10
+        System.out.println(BetweenLimits('j','f')); // ghi
+        System.out.println(Doop(5,"+",3)); // 8
+        System.out.println(IsLeapYear(2020)); // true
+        System.out.println(CountDivisible(5,17,2,3)); // 2
+        System.out.println(FindDivident(5,17,4)); // 8
+        System.out.println(ReverseAlphabetValue('a')); // z
+
+    }
+
     //Create a Go function that takes an integer as input and returns a boolean value (true or false) to indicate whether the input integer is negative or not.
     static boolean IsNegative(int n){
         return n< 0;
@@ -10,7 +24,7 @@ public class condnloops {
         }else if (f > i){
             return "Float";
         }else{
-        return "Same"
+        return "Same";
         }
     }
     //In this task you need to make a function that takes a string, that can contain a month name. If a month name is given, the season has to be returned. Otherwise return "invalid input: " with the input appended to it.
@@ -40,7 +54,7 @@ public class condnloops {
     static int Accumulate(int n){
         int answer = 0;
         if (n<0){
-        return 0
+        return 0;
         }
         for (int i = 0; i <= n; i++){
             answer += i;
@@ -116,20 +130,5 @@ public class condnloops {
 
     static char ReverseAlphabetValue(char ch){
         return (char) ('z'-(ch-'a'));
-    }
-
-
-    public static void main(String[] args){
-        System.out.println(IsNegative(6)); // false
-        System.out.println(IntVsFloat(5,8.8f)); // Float
-        System.out.println(Season("feb")); // winter
-        System.out.println(Accumulate(4)); // 10
-        System.out.println(BetweenLimits('j','f')); // ghi
-        System.out.println(Doop(5,"+",3)); // 8
-        System.out.println(IsLeapYear(2020)); // true
-        System.out.println(CountDivisible(5,17,2,3)); // 2
-        System.out.println(FindDivident(5,17,4)); // 8
-        System.out.println(ReverseAlphabetValue('a')); // z
-
     }
 }

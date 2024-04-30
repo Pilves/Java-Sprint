@@ -1,5 +1,13 @@
-public class Main {
-
+public class DataTypes_Variables_Calculations {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+        System.out.println(Abacus(8, 3)); // 2
+        System.out.println(Mean(1.15f,2.8f,3.5f)); // 2.5
+        System.out.println(Casting(1.15f)); // 1
+        System.out.println(ShiftBy('a', 4)); // e
+        System.out.println(strConcat("Hello", "World", ",")); // Hello, World
+        System.out.println(reverseAlphabetValue('a')); // z
+    }
     //Write a function that takes two integer (int) values as input and returns the result of integer division of the first value by the second.
     static int Abacus(int a, int b){
         return a/b;
@@ -24,19 +32,4 @@ public class Main {
     static String reverseAlphabetValue(char a){
         return String.valueOf((char) (122-(a-97)));
     }
-
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-        System.out.println(Abacus(8, 3)); // 2
-        System.out.println(Mean(1.15f,2.8f,3.5f)); // 2.5
-        System.out.println(Casting(1.15f)); // 1
-        System.out.println(ShiftBy('a', 4)); // e
-        System.out.println(strConcat("Hello", "World", ",")); // Hello, World
-        System.out.println(reverseAlphabetValue('a')); // z
-
-
-
-    }
-
-
 }
