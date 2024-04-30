@@ -1,6 +1,5 @@
 public class DataTypes_Variables_Calculations {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
         System.out.println(Abacus(8, 3)); // 2
         System.out.println(Mean(1.15f,2.8f,3.5f)); // 2.5
         System.out.println(Casting(1.15f)); // 1
@@ -26,7 +25,7 @@ public class DataTypes_Variables_Calculations {
     }
     // Write a function that takes two strings as input and returns the concatenation of the two strings with a delimiter in between.
     static String strConcat(String a , String b,String delim){
-        return a+delim+b;
+        return a+delim+" "+b;
     }
     // Write a function that takes a character as input and returns the character that is the result of reversing the alphabet value of the input character.
     static String reverseAlphabetValue(char a){
