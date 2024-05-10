@@ -1,6 +1,5 @@
 public class GoinginDepth {
     public static void main(String[] args){
-
         System.out.println(AlphabetMastery(6)); // abcdef
         System.out.println(ReverseAlphabet(5)); // zupkfa
         System.out.println(Pairs()); // "00 01, 00 02, 00 03, ..., 00 98, 00 99, 01 02, 01 03, ..., 97 98, 97 99, 98 99"

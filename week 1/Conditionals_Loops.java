@@ -10,7 +10,6 @@ public class Conditionals_Loops {
         System.out.println(CountDivisible(5,17,2,3)); // 2
         System.out.println(FindDivident(5,17,4)); // 8
         System.out.println(ReverseAlphabetValue('a')); // z
-
     }
 
     //Create a Go function that takes an integer as input and returns a boolean value (true or false) to indicate whether the input integer is negative or not.
