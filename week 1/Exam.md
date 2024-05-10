@@ -1,35 +1,147 @@
-# Chess Board and Interest Calculation
+# Java Programming Exercises
 
-The code includes functions for generating chess board positions based on color and calculating the number of years needed for an investment to grow to a target amount under a specified interest rate.
+Welcome to the Java Programming Exercises! This repository contains a series of exercises designed to help you practice and enhance your Java programming skills. Each exercise focuses on different aspects of Java programming, such as loops, conditional statements, and string manipulation. Let's get started!
 
-## Function Descriptions
+## Exercises
 
-### ChessBoard Function
+### 1. Accumulate
 
-#### Description
-The `ChessBoard` function generates a list of chess board square positions, either black or white, based on the input parameter. The chess board is assumed to be a standard 8x8 grid.
+**Learning Objectives:**
 
-#### Logic
-- The function uses nested loops to iterate over rows (1 to 8) and columns ('a' to 'h').
-- It calculates whether a square is black or white by checking if the sum of the row and the column's ASCII value is even (black) or odd (white).
-- Based on the boolean input (`black`), it either returns a string of black squares or white squares.
-- Each square is represented by its column letter followed by its row number, e.g., "a1", "b2".
+- Develop proficiency in using loops to accumulate values.
+- Practice handling edge cases, such as negative input values.
 
-#### Usage
-- Calling `ChessBoard(true)` will return positions of all black squares.
-- Calling `ChessBoard(false)` will return positions of all white squares.
+**Instructions:**
 
-### Interest Function
+Create a method that takes an integer `n` and returns the sum of all integers from `n` down to 1. If `n` is less than 0, the method should return 0.
 
-#### Description
-The `Interest` function calculates how many years it will take for a given principal amount to grow to or exceed a target amount under a constant annual interest rate.
+**Expected Method Signature:**
+```java
+public static int Accumulate(int n){
+    // Your code here
+}
+```
 
-#### Logic
-- Starts with the initial amount and iteratively applies the interest rate until the amount exceeds or equals the target amount.
-- Increments a year counter each time the interest is applied.
-- Returns the number of years required.
-- If the initial amount is already greater than or equal to the target, returns 0.
-- Caps the calculation at 99 years to prevent excessive computation.
+### 2. Is Leap Year
 
-#### Usage
-- Example: `Interest(100.0, 121.0, 0.1)` calculates how many years it takes for $100 to grow to $121 at an annual interest rate of 10%.
+**Learning Objectives:**
+
+- Learn to apply conditional statements to check for leap years.
+- Understand the rules for determining whether a year is a leap year.
+
+**Instructions:**
+
+Create a method that takes an integer `n` (representing a year) and returns `true` if the year is a leap year, and `false` otherwise.
+
+**Expected Method Signature:**
+```java
+public static boolean IsLeapYear(int n){
+    // Your code here
+}
+```
+
+### 3. Combinations
+
+**Learning Objectives:**
+
+- Develop skills in generating combinations using nested loops.
+- Practice string formatting and concatenation to create structured outputs.
+
+**Instructions:**
+
+Create a method that generates all unique combinations of three different digits (0-9) in ascending order. The combinations should be returned as a comma-separated string.
+
+**Expected Method Signature:**
+```java
+public static String Combinations(){
+    // Your code here
+}
+```
+
+### 4. Pairs
+
+**Learning Objectives:**
+
+- Develop skills in generating pairs of numbers using nested loops.
+- Practice string formatting and concatenation to create structured outputs.
+
+**Instructions:**
+
+Create a method that generates all possible pairs of two-digit numbers (00-99). Each number in the pair should be padded with a leading zero if it is less than 10. The pairs should be returned as a comma-separated string.
+
+**Expected Method Signature:**
+```java
+public static String Pairs(){
+    // Your code here
+}
+```
+
+### 5. Atoi
+
+**Learning Objectives:**
+
+- Learn to convert a string representation of a number into an integer.
+- Handle edge cases such as negative signs and non-numeric characters.
+
+**Instructions:**
+
+Create a method that takes a string representing a number and converts it into an integer. The method should handle leading '+' and '-' signs. If the string contains non-numeric characters, the method should return -1.
+
+**Expected Method Signature:**
+```java
+public static int Atoi(String s){
+    // Your code here
+}
+```
+
+### 6. ChessBoard
+
+**Learning Objectives:**
+
+- Learn to generate sequences based on alternating patterns.
+- Practice using boolean parameters to toggle between different outputs.
+
+**Instructions:**
+
+Create a method that takes a boolean parameter `col`. The method should return a string of either all black or all white squares on a chessboard, depending on the value of `col`. The squares should be returned in the format "a1, b2, c3,...".
+
+**Expected Method Signature:**
+```java
+public static String ChessBoard(boolean col){
+    // Your code here
+}
+```
+
+### 7. Interest
+
+**Learning Objectives:**
+
+- Develop skills in calculating compound interest over time.
+- Practice using loops to iterate until a condition is met.
+
+**Instructions:**
+
+Create a method that takes three parameters: `start` (initial amount), `finish` (target amount), and `interest` (interest rate). The method should return the number of years it takes for the initial amount to reach or exceed the target amount with the given interest rate. If the number of years exceeds 99, the method should return 0.
+
+**Expected Method Signature:**
+```java
+public static int Interest(int start, int finish, double interest){
+    // Your code here
+}
+```
+
+## Example Usage
+
+```java
+public class Exam {
+    public static void main(String[] args) {
+        System.out.println(Accumulate(4)); // Example output: 10
+        System.out.println(IsLeap(2000)); // Example output: true
+        System.out.println(Combinations()); // Example output: "012, 013, 014, ..."
+        System.out.println(Pairs()); // Example output: "00 01, 00 02, ..."
+        System.out.println(Atoi("-12345")); // Example output: -12345
+        System.out.println(ChessBoard(true)); // Example output: "a2, b1, c2, ..."
+        System.out.println(Interest(1000.0f, 2000.0f, 0.05f)); // Example output: 15
+    }
+}
+```
