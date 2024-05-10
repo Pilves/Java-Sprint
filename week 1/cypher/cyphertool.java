@@ -48,7 +48,7 @@ public class cyphertool {
             } else if (c >= 'A' && c <= 'Z') {
                 c = (char) ('A' + (c - 'A' + 13) % 26);
             } else if (c == ' ') {
-                result.append(' '); // Append space directly
+                result.append(' ');
                 continue;
             }
             result.append(c);
